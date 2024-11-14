@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div id="navbar">
+        <img src="AmazonPayments.png" style="height: 100px;" alt="Amazon Logo">
+    </div>
+    <header>
+        <h3>Select a payment method</h3>
+        
+        <div class="calender">
+            <img src="calendar-icon-png-transparent-30.png" style="height:20px;" alt="Calendar Icon">
+        </div>
+        <div class="calender">
+            <p> Pay <span style="text-decoration: line-through;"> $549.00 </span> <span style="color: rgb(195, 67, 67);"> $499.00 </span> for this order.<span style="font-weight: lighter;">Get $50 cashback with Amazon Pay Later.</span></p>
+        </div>
+
+        <br>
+        <br>
+        <p>WAYS TO PAY</p>
+
+        <div class="payment-method" style="border: 3px solid grey;">
+            <input type="radio" value="credit" id="card" class="payment" name="payment">
+            <label for="card"><a href="Credit.html" style="text-decoration: none; color: black;">Credit or Debit card</a></label>
+            <img src="credit-card-credit-card-icon-white-background-debit-card-symbol-free-vector.jpg" style="height: 30px;" alt="Credit Card Icon">
+        </div>
+
+        <div class="payment-method" style="border: 3px solid grey;">
+            <input type="radio" value="UPI" id="upi" class="payment" name="payment">
+            <label for="upi">Other UPI Apps</label>
+            <img src="google_pay_logo.avif" style="height: 30px;" alt="Google Pay Logo">
+        </div>
+
+        <div class="payment-method" style="border: 3px solid grey;">
+            <input type="radio" value="amazon_pay_later" id="amazon-pay-later" class="payment" name="payment">
+            <label for="amazon-pay-later">Amazon Pay Later</label>
+            <img src="amazon_pay.jpeg" style="height: 19px;" alt="Amazon Pay Later Logo">
+        </div>
+
+        <div class="payment-method" style="border: 3px solid grey;">
+            <input type="radio" value="emi" id="emi" class="payment" name="payment">
+            <label for="emi">EMI</label>
+            <img src="EMI.jpeg" style="height: 30px;" alt="EMI Logo">
+        </div>
+
+        <div class="payment-method" style="border: 3px solid grey;">
+            <input type="radio" value="net_banking" id="net-banking" class="payment" name="payment">
+            <label for="net-banking">Net Banking</label>
+            <img src="internet-banking-vector-icon.jpg" style="height: 30px;" alt="Net Banking Logo">
+        </div>
+
+        <div class="payment-method" style="border: 3px solid grey;">
+            <input type="radio" value="cash_on_delivery" id="cash-on-delivery" class="payment" name="payment">
+            <label for="cash-on-delivery">Cash on Delivery/Pay on Delivery</label>
+            <img src="cash.jpeg" style="height: 30px;" alt="Cash on Delivery Logo">
+        </div>
+
+        <div class="promotion">
+            
+            <textarea cols="135" rows="3"style="color: rgb(28, 162, 162);">Add Gift Card or Promo Code</textarea>
+        </div>
+        
+        <div class="continue-button">
+            <input type="button" value="Continue" onclick="return Check()" id="CONTINUE">
+        </div>
+        <br>
+
+        <div class="purchase-protection" id="mini">
+            <img src="Amazon_mini.jpeg" style="height: 20px;" alt="Amazon Mini">
+            <p>100% Purchase Protection<br><span style="color: rgb(197, 75, 75); font-size: 10px;">Original products|secure payments</span></p>
+        </div>
+    </header>
+    <footer>
+        <div style="background-color: rgb(27, 18, 18); height: 55px;">
+            <p style="text-align: center; color: white;">Conditions of use &nbsp; &nbsp; &nbsp; &nbsp;privacy Notice&nbsp; &nbsp; &nbsp; &nbsp; Interest-Based Ads <br>&copy; 1996-2024, Amazon.com, Inc. and its affiliates</p>
+        </div>
+    </footer>
+    <script>
+        function Check()
+        {
+            var a = document.getElementById("card");
+            var b = document.getElementById("upi");
+            var c = document.getElementById("amazon-pay-later");
+            var d = document.getElementById("emi");
+            var e = document.getElementById("net-banking");
+            var f = document.getElementById("cash-on-delivery");
+            if(a.checked || b.checked || c.checked || d.checked || e.checked || f.checked  )
+            {
+                window.location.href = "credit.php";
+
+                return true ;
+            }
+            else{
+                alert("Please select any option before going further");
+                return false;
+            }
+        }
+        </script>
+</body>
+</html>

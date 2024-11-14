@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Choose your Delivery option</title>
+    <link rel="stylesheet" href="Deliver.css">
+    </head>
+    <body>
+        <div style="background-image:cover;">
+            <img src="amazon.png" height="140px" width="180px">
+            </div>
+            <h1 style="font-weight: 250px;">Choose your delivery options</h1>
+                        
+                        <br>
+                        <br>
+                        <hr>
+
+            <h2>Shipment 1 of 1</h2>
+            <h4><b>Shipping from DUBEY CREATION</b><br>(<span style="color: rgb(133, 207, 207); font-weight: lighter;">Learn more</span>)</h4>
+            <h4 style="font-weight: lighter;">Deliver to: Md Inzamamul Haque,Dia Hospitality Wing A building ensara metro pipla fata,Ensara metro park pipla fata Hudkeshwar road,<br>NAGPUR,MAHARASHTRA,440034 India</h5>
+            <ul>
+                <li>Ibrance Chikankari Embroidery Kurti for Womens and Girls(XXL,Black)<br><span style="text-decoration: line-through;">$999.00</span>&nbsp;<span style="color: rgb(225, 79, 79); text-decoration: line-through;">$549.00</span> - Quantity:1 <br>Sold by: DUBEY CREATION </li>
+            </ul>    
+           <br>
+           <h4 style="font-weight: lighter; color: #71d6d6;">Change quantities or delete</h4>
+           <br>
+           
+           <h3>Choose a delivery speed<h3>
+            <div style="border: 1px solid grey; height: 50px; border-radius: 5px;" class="choose">
+                <div class="yoyo1">
+               <input type="radio" value="Checked" id="standard"> 
+               </div>
+               <div class="yoyo1">
+               <h6>
+              <span style="color: rgb(84, 214, 84);">Saturday</span>--Free Standard Delivery.Free with Prime
+               </h6>
+            </div> 
+            </div>
+            <br>
+            <hr>
+            <div id="X">
+            <button class="continue" onclick=" return check()" id="B" >Continue</button>
+            </div>
+  <br>
+  <br>
+  <hr>
+
+
+            <footer>
+                <p style="text-align: center;"><span style="color: #3c8d8d;">Conditions of use|Privacy Notice</span> &copy 2011-2023,Amazon.com,Inc.and its affilates</p>
+            </footer>
+            <script>
+                function check()
+                {
+                    var a = document.getElementById("standard");
+                    if(a.checked)
+                    {
+                        window.location.href = "payment.html";
+
+                        return true ;
+                    }
+                    else{
+                        alert("Please select any option before going further");
+                        return false;
+                    }
+                }
+                </script>
+    </body>
+</html>
+
+

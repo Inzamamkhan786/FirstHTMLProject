@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: #232f3e;
+    padding: 10px;
+    text-align: center;
+}
+
+#navbar img {
+    height: 30px;
+}
+
+header {
+    padding: 20px;
+}
+
+.calender img {
+    height: 20px;
+}
+
+.continue-button {
+    height: 10x;
+    text-align: center;
+}
+
+.payment-method {
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-method label {
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.payment-method img {
+    height: 30px;
+}
+
+.promotion {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+textarea{
+font-size: 16px;
+}
+.purchase-protection {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(27, 18, 18);
+    height: 55px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.continue-button input {
+    background-color: #f3c117;
+padding: 20px;
+border: 1px solid #f3c117 ;
+border-radius: 6px;
+
+}
+
+#CONTINUE:hover{
+    cursor: pointer;
+    background-color: #ef980b ;
+    
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" href="tick.css">
+    </head>
+    <body>
+        <div class="container">
+            <button type="submit" class="btn" onclick="openPopup()">submit</button>
+            <div class="popup" id="popup">
+                <img src="tickk.jpg" style="height: 140px;">
+                <h2>Thank You!</h2>
+                <p>Your Payment has been successfully done. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+
+        <script>
+            let popup=document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+
+              function closePopup() {
+                    popup.classList.remove("open-popup");
+                }
+        </script>
+    </body>
+</html>

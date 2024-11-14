@@ -1,0 +1,30 @@
+
+#image1{
+    height: 800px;
+    background-image: url(Amazon_buy.png);
+    background-size: cover;
+}
+
+#add_to_cart{
+position: absolute;
+top: 830px;
+display: flex;
+justify-content: center;
+left: 50%;
+width: 300px;
+height: 30px;
+border-radius: 10px;
+background-color: #FFD814;
+}
+
+#buy_to_cart{
+    position: absolute;
+    top:870px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #FFA41C;
+}
